@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.none {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+
+/* header */
+
+.header-nav {
+    height: 90px;
+    background-color: #181818;
+}
+
+.nav {
+    justify-content: space-between;
+    padding: 10px 15px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.nav-list {
+    align-items: center;
+    gap: 32px;
+    font-size: 13px;
+}
+
+.nav-list li:last-child {
+    padding: 13px 20px;
+    background-color: #fff;
+    border-radius: 14px;
+}
+
+.nav-list li:last-child a {
+    color: #000;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    background-image: url(./../img/hero-bg.png);
+    background-size: cover;
+}
+
+.hero-content {
+    padding: 410px 25% 60px;
+    text-align: center;
+    color: #C0C0C0;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #C0C0C0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    color: #fff;
+    font-size: 54px;
+}
+
+.hero-descr {
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.camera-icons {
+    position: absolute;
+    justify-content: flex-end;
+    right: 40px;
+    bottom: 40px;
+    gap: 24px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.camera-icons span {
+    margin-left: 5px;
+    vertical-align: super;
+}
+
+/* main */
+
+.what-we-do {
+    padding: 15px;
+    background-color: #000;
+    color: #fff;
+}
+
+.title-wrapper {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.main-subtitle {
+    font-size: 23px;
+    color: #C0C0C0;
+    margin-bottom: 42px;
+}
+
+.cards {
+    max-width: 1290px;
+    margin: 0 auto 100px;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.card-item {
+    max-width: 620px;
+    max-height: 650px;
+}
+
+.card-item h3 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.card-item p {
+    text-align: left;
+    color: #C0C0C0;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.descr-wrapper {
+    margin: 75% 45px 70px 30px;
+}
+
+.product {
+    background-image: url(./../img/card-photo.png);
+    background-size: cover;
+}
+
+.architecture {
+    background-image: url(./../img/card-arch.png);
+    background-size: cover;
+}
+
+.drone {
+    background-image: url(./../img/card-drone.png);
+    background-size: cover;
+}
+
+.wildlife {
+    background-image: url(./../img/card-wild.png);
+    background-size: cover;
+}
+
+.card-link {
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 14px;
+    color: #000;
+    padding: 10px;
+}
+
+.photo-example {
+    position: relative;
+    background-image: url(./../img/mount-expample.png);
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+    height: 900px;
+}
+
+.text-wrapper {
+    margin-right: 60px;
+    max-width: 300px;
+}
+
+.mount-title {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.mount-subtitle {
+    color:#C0C0C0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.instrumets {
+    height: 540px;
+    justify-content: space-between;
+    background-color: #000;
+    position: relative;
+}
+
+.text {
+    margin: auto 60px;
+    color: #fff;
+    font-size: 14px;
+    max-width: 50%;
+}
+
+.instr-text {
+    color: #C0C0C0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.instr-title {
+    font-size: 28px;
+}
+
+.instr-img-wrapper {
+    
+}

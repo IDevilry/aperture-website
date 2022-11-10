@@ -1,12 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Aperture</title>
 </head>
+
 <body>
-    
+
+    <header class="header">
+        <div class="header-nav">
+            <nav class="nav flex">
+                <img src="./img/logo.svg" alt="Aperture logo" class="logo">
+                <ul class="nav-list flex">
+                    <li class="nav-item"><a href="#!">Business areas</a></li>
+                    <li class="nav-item"><a href="#!">Featured images</a></li>
+                    <li class="nav-item"><a href="#!">Gear cage</a></li>
+                    <li class="nav-item"><a href="#!">Contact</a></li>
+                    <li class="nav-item"><a href="#!">Get template</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero">
+            <div class="hero-content">
+                <p class="subtitle">Photographer & Filmmaker</p>
+                <h1 class="hero-title">Aperture Studios</h1>
+                <p class="hero-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+                    in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+                    commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc
+                    ut sem vitae risus tristique posuere.</p>
+            </div>
+
+            <div class="camera-icons flex">
+                <div class="exp">
+                    <img src="./img/camera-icon-exp.svg" alt="Exposure" class="exp-icon">
+                    <span>1/2000s</span>
+                </div>
+                <div class="diafragm">
+                    <img src="./img/camera-icon-f.svg" alt="Diaframg" class="f-icon">
+                    <span>f/11</span>
+                </div>
+                <div class="iso">
+                    <img src="./img/camera-icon-iso.svg" alt="Camera ISO" class="iso-icon">
+                    <span>100</span>
+                </div>
+                <div class="location">
+                    <img src="./img/loc-icon.svg" alt="Photo Location" class="location-icon">
+                    <span>Iceland</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="what-we-do">
+            <div class="title-wrapper">
+                <h2 class="main-title">What we do.</h2>
+                <p class="main-subtitle">The areas that we're specialized in.</p>
+            </div>
+
+            <div class="cards flex">
+                <div class="card-item product">
+                    <div class="descr-wrapper">
+                        <h3 class="card-title">Product Photography</h3>
+                        <p class="card-descr">Cras commodo consequat orci, in convallis risus egestas non. Nulla
+                            efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                        <a href="#!" class="card-link">Read more</a>
+                    </div>
+
+                </div>
+                <div class="card-item architecture">
+                    <div class="descr-wrapper">
+                        <h3 class="card-title">Architecture Photography</h3>
+                        <p class="card-descr">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec
+                            egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt
+                            aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                        <a href="#!" class="card-link">Read more</a>
+                    </div>
+                </div>
+                <div class="card-item drone">
+                    <div class="descr-wrapper">
+                        <h3 class="card-title">Drone Photography</h3>
+                        <p class="card-descr">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis
+                            tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas
+                            non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus
+                            quam.</p>
+                        <a href="#!" class="card-link">Read more</a>
+                    </div>
+                </div>
+                <div class="card-item wildlife">
+                    <div class="descr-wrapper">
+                        <h3 class="card-title">Wildlife Photography</h3>
+                        <p class="card-descr">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi
+                            neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna
+                            turpis.</p>
+                        <a href="#!" class="card-link">Read more</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="photo-example flex">
+            <div class="text-wrapper">
+                <h3 class="mount-title">Sunset at Mount Fuji</h3>
+                <p class="mount-subtitle">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in
+                    convallis risus egestas non.</p>
+            </div>
+            <div class="camera-icons flex">
+                <div class="exp">
+                    <img src="./img/camera-icon-exp.svg" alt="Exposure" class="exp-icon">
+                    <span>1''</span>
+                </div>
+                <div class="diafragm">
+                    <img src="./img/camera-icon-f.svg" alt="Diaframg" class="f-icon">
+                    <span>f/16</span>
+                </div>
+                <div class="iso">
+                    <img src="./img/camera-icon-iso.svg" alt="Camera ISO" class="iso-icon">
+                    <span>400</span>
+                </div>
+                <div class="location">
+                    <img src="./img/loc-icon.svg" alt="Photo Location" class="location-icon">
+                    <span>Japan</span>
+                </div>
+            </div>
+        </div>
+        <div class="instrumets flex">
+            <div class="text">
+                <span class="instr-text">The Gear cage</span>
+                <h3 class="instr-title">The tools that we use.</h3>
+                <p class="instr-descr">The say that "no place is boring if you've had a good night's sleep and have a
+                    pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the
+                    tools that we actually use everyday to capture the amazing things around us.</p>
+            </div>
+            <div class="instr-img-wrapper">
+                <div class="camera-icons flex">
+                    <div class="exp">
+                        <img src="./img/camera-icon-exp.svg" alt="Exposure" class="exp-icon">
+                        <span>0,8''</span>
+                    </div>
+                    <div class="diafragm">
+                        <img src="./img/camera-icon-f.svg" alt="Diaframg" class="f-icon">
+                        <span>f/5,6</span>
+                    </div>
+                    <div class="iso">
+                        <img src="./img/camera-icon-iso.svg" alt="Camera ISO" class="iso-icon">
+                        <span>100</span>
+                    </div>
+                    <div class="location">
+                        <img src="./img/loc-icon.svg" alt="Photo Location" class="location-icon">
+                        <span>Sweden</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
 </body>
+
 </html>

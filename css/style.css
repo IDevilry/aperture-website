@@ -8,7 +8,7 @@ button {
     background-color: #181818;
     border: none;
     cursor: pointer;
-} 
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -16,6 +16,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .none {
@@ -300,6 +301,7 @@ ul {
 .clients-logos {
     max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .logos-list {

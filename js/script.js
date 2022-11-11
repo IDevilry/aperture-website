@@ -1,5 +1,5 @@
-const burger = document.querySelector('#burger')
+const burger = document.querySelector("#burger");
 
-burger.addEventListener('click', () => {
-    document.querySelector('.burger-list').classList.toggle('none');
-})
+burger.addEventListener("click", () => {
+    document.querySelector(".burger-list").classList.toggle("none");
+});

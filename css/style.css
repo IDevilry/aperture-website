@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+button {
+    background-color: #181818;
+    border: none;
+    cursor: pointer;
+} 
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -20,15 +26,19 @@ ul {
     display: flex;
 }
 
+.burger {
+    display: none;
+}
 
 /* header */
 
 .header-nav {
-    height: 90px;
+    min-height: 90px;
     background-color: #181818;
 }
 
 .nav {
+    position: relative;
     justify-content: space-between;
     padding: 10px 15px;
     max-width: 1140px;
@@ -42,7 +52,7 @@ ul {
 }
 
 .nav-list li:last-child {
-    padding: 13px 20px;
+    padding: 10px 15px;
     background-color: #fff;
     border-radius: 14px;
 }
@@ -59,11 +69,12 @@ ul {
 .hero {
     position: relative;
     background-image: url(./../img/hero-bg.png);
+    background-position: center;
     background-size: cover;
 }
 
 .hero-content {
-    padding: 410px 25% 60px;
+    padding: 410px 25% 100px;
     text-align: center;
     color: #C0C0C0;
 }
@@ -98,6 +109,28 @@ ul {
 .camera-icons span {
     margin-left: 5px;
     vertical-align: super;
+}
+
+/* burger */
+
+.burger-list {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #000;
+}
+
+.burger-list a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.burger-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
 }
 
 /* main */
@@ -139,6 +172,8 @@ ul {
 .card-item {
     max-width: 620px;
     max-height: 650px;
+    background-size: cover;
+    background-position: center;
 }
 
 .card-item h3 {
@@ -162,22 +197,18 @@ ul {
 
 .product {
     background-image: url(./../img/card-photo.png);
-    background-size: cover;
 }
 
 .architecture {
     background-image: url(./../img/card-arch.png);
-    background-size: cover;
 }
 
 .drone {
     background-image: url(./../img/card-drone.png);
-    background-size: cover;
 }
 
 .wildlife {
     background-image: url(./../img/card-wild.png);
-    background-size: cover;
 }
 
 .card-link {
@@ -191,10 +222,11 @@ ul {
 .photo-example {
     position: relative;
     background-image: url(./../img/mount.jpg);
+    background-position: center;
     background-size: cover;
     justify-content: flex-end;
     align-items: center;
-    height: 900px;
+    min-height: 900px;
 }
 
 .text-wrapper {
@@ -215,16 +247,17 @@ ul {
 }
 
 .instrumets-photo {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     position: relative;
     justify-content: flex-start;
     align-items: center;
     background-image: url(./../img/instr.jpg);
+    background-position: center;
     background-color: darkgrey;
     background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 900px;
+    min-height: 900px;
     color: #fff;
 }
 
@@ -240,13 +273,14 @@ ul {
 }
 
 .green-photo {
-    margin-top: 100px;
+    /* margin-top: 100px; */
     position: relative;
     background-image: url(./../img/green.jpg);
+    background-position: center;
     background-size: cover;
     justify-content: flex-end;
     align-items: center;
-    height: 900px;
+    min-height: 900px;
 }
 
 .clients-text {
@@ -276,11 +310,73 @@ ul {
 }
 
 .star-photo {
-    margin-top: 120px;
     position: relative;
     background-image: url(./../img/star-fall.jpg);
+    background-position: center;
     background-size: cover;
     justify-content: flex-end;
     align-items: center;
-    height: 900px;
+    min-height: 900px;
+}
+
+.clients {
+    margin-bottom: 50px;
+}
+
+/* footer */
+
+
+
+
+/* media */
+
+@media screen and (max-width:800px) {
+    .nav-list {
+        gap: 15px;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+    .nav-list {
+        display: none;
+    }
+
+    .subtitle {
+        color: #000;
+    }
+
+    .header-nav {
+        min-height: 50px;
+    }
+
+    .nav {
+        padding: 10px 30px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .hero-content {
+        padding: 30% 100px;
+    }
+
+    .main>div {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .hero-content {
+        padding: 30% 25px;
+    }
+
+    .camera-icons {
+        gap: 10px;
+    }
+
+    .camera-icons span {
+        margin: 0;
+    }
 }

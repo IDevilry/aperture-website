@@ -102,6 +102,10 @@ ul {
 
 /* main */
 
+.main {
+    background-color: #000;
+}
+
 .what-we-do {
     padding: 15px;
     background-color: #000;
@@ -186,7 +190,7 @@ ul {
 
 .photo-example {
     position: relative;
-    background-image: url(./../img/mount-expample.png);
+    background-image: url(./../img/mount.jpg);
     background-size: cover;
     justify-content: flex-end;
     align-items: center;
@@ -194,35 +198,36 @@ ul {
 }
 
 .text-wrapper {
-    margin-right: 60px;
+    margin: 0 60px;
     max-width: 300px;
 }
 
 .mount-title {
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
     letter-spacing: 2px;
 }
 
 .mount-subtitle {
-    color:#C0C0C0;
-    font-size: 14px;
+    color: #C0C0C0;
+    font-size: 16px;
     line-height: 20px;
 }
 
-.instrumets {
-    height: 540px;
-    justify-content: space-between;
-    background-color: #000;
+.instrumets-photo {
+    margin-top: 100px;
     position: relative;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url(./../img/instr.jpg);
+    background-color: darkgrey;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 900px;
+    color: #fff;
 }
 
-.text {
-    margin: auto 60px;
-    color: #fff;
-    font-size: 14px;
-    max-width: 50%;
-}
 
 .instr-text {
     color: #C0C0C0;
@@ -234,6 +239,48 @@ ul {
     font-size: 28px;
 }
 
-.instr-img-wrapper {
-    
+.green-photo {
+    margin-top: 100px;
+    position: relative;
+    background-image: url(./../img/green.jpg);
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+    height: 900px;
+}
+
+.clients-text {
+    text-align: center;
+    margin: 110px 0;
+    color: #fff;
+}
+
+.client-title {
+    font-size: 40px;
+}
+
+.clients-subtitle {
+    font-size: 24px;
+}
+
+.clients-logos {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.logos-list {
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 110px;
+}
+
+.star-photo {
+    margin-top: 120px;
+    position: relative;
+    background-image: url(./../img/star-fall.jpg);
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: center;
+    height: 900px;
 }

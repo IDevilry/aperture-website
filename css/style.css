@@ -504,15 +504,23 @@ ul {
 }
 
 .succs-img {
-    position: absolute;   
+    position: absolute;
     top: 10px;
     left: 5px;
 }
 
 @keyframes ani {
-    0% {opacity: 0;}
-    50% {opacity: 1;}
-    100% {opacity: 0;}
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 /* media */

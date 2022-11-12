@@ -9,17 +9,15 @@ burger.addEventListener("click", () => {
 function inputClick() {
     emailInputEl.value = "";
     emailInputEl.setAttribute("placeholder", "Succesfully");
-    document.getElementById("input-img").classList.remove('none');
-    document.getElementById("input-img").classList.add('animation')
+    document.getElementById("input-img").classList.remove("none");
+    document.getElementById("input-img").classList.add("animation");
 }
 
 footerButton.addEventListener("click", () => {
     inputClick();
     setTimeout(() => {
-        emailInputEl.setAttribute("placeholder", "Your email")
-        document.getElementById("input-img").classList.add('none');
-        document.getElementById("input-img").classList.remove('animation');
+        emailInputEl.setAttribute("placeholder", "Your email");
+        document.getElementById("input-img").classList.add("none");
+        document.getElementById("input-img").classList.remove("animation");
     }, 4000);
 });
-
-

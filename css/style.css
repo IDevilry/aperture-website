@@ -132,6 +132,7 @@ ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
+    padding-left: 32px;
 }
 
 /* main */
@@ -248,7 +249,6 @@ ul {
 }
 
 .instrumets-photo {
-    /* margin-top: 100px; */
     position: relative;
     justify-content: flex-start;
     align-items: center;
@@ -262,6 +262,9 @@ ul {
     color: #fff;
 }
 
+.instr-descr {
+    color: #C0C0C0;
+}
 
 .instr-text {
     color: #C0C0C0;
@@ -274,7 +277,6 @@ ul {
 }
 
 .green-photo {
-    /* margin-top: 100px; */
     position: relative;
     background-image: url(./../img/green.jpg);
     background-position: center;
@@ -366,6 +368,12 @@ ul {
 
     .main>div {
         margin-top: 0;
+        min-height: 450px;
+    }
+
+    .text-wrapper {
+        margin: 0 15px;
+        max-width: 350px;
     }
 }
 

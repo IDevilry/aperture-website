@@ -593,11 +593,19 @@ ul {
         gap: 15px;
     }
 
+    .modal-container {
+        width: 70%;
+    }
+
 }
 
 @media screen and (max-width:720px) {
     .nav-list {
         display: none;
+    }
+
+    .modal-container {
+        width: 85%;
     }
 
     .subtitle {

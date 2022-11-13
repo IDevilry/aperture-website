@@ -70,6 +70,7 @@ ul {
 
 .nav-list li:last-child:hover {
     background-color: #C0C0C0;
+    cursor: pointer;
 }
 
 .nav-list a {
@@ -150,6 +151,67 @@ ul {
     padding-left: 32px;
 }
 
+
+/* modal */
+
+.modal-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(24, 24, 24, 0.8);
+    z-index: 2;
+}
+
+.modal-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    background-color: #181818;
+    border-radius: 15px;
+}
+
+.modal-title {
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.modal-descr {
+    text-align: left;
+    padding: 25px;
+    font-size: 14px;
+    line-height: 22px;
+    border-bottom: 1px solid #C0C0C0;
+}
+
+.modal-bottom {
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.modal-button {
+    background-color: #fff;
+    border-radius: 15px;
+    height: 40px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 0.8;
+    transition: 0.3s linear;
+}
+
+.modal-button:hover {
+    opacity: 0.8;
+}
+
 /* main */
 
 .main {
@@ -157,6 +219,7 @@ ul {
 }
 
 .what-we-do {
+    position: relative;
     padding: 15px;
     background-color: #000;
     color: #fff;
@@ -228,7 +291,7 @@ ul {
     background-image: url(./../img/main-img/what-we-do/card-wild.png);
 }
 
-.card-link {
+.card-button {
     background-color: #fff;
     text-decoration: none;
     border-radius: 14px;
@@ -237,7 +300,7 @@ ul {
     transition: 0.3s linear;
 }
 
-.card-link:hover {
+.card-button:hover {
     background-color: #C0C0C0;
 }
 

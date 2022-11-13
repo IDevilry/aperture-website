@@ -165,6 +165,9 @@ ul {
 }
 
 .modal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -173,6 +176,8 @@ ul {
     text-align: left;
     background-color: #181818;
     border-radius: 15px;
+    height: 450px;
+    padding: 100px;
 }
 
 .modal-title {
@@ -588,13 +593,21 @@ ul {
 
 /* media */
 
+@media screen and (max-width:1350px) {
+    .modal-container {
+        padding: 35px;
+        width: 85%;
+    }
+}
+
 @media screen and (max-width:800px) {
     .nav-list {
         gap: 15px;
     }
 
     .modal-container {
-        width: 70%;
+        width: 80%;
+        padding: 10px;
     }
 
 }
@@ -687,5 +700,9 @@ ul {
 
     .footer-btn {
         margin: 0;
+    }
+
+    .modal-container {
+        padding: 5px;
     }
 }

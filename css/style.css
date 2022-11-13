@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 button {
     background-color: #181818;
     border: none;
@@ -374,9 +378,13 @@ ul {
     min-height: 700px;
 }
 
+.clients {
+    padding-top: 100px;
+}
+
 .clients-text {
     text-align: center;
-    margin: 110px 0;
+
     color: #fff;
 }
 
@@ -418,6 +426,7 @@ ul {
 .bottom-section {
     text-align: center;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .bottom-text-wrapper {
@@ -641,7 +650,7 @@ ul {
         padding: 30% 100px;
     }
 
-    .main>div:not(:last-child) {
+    .main>div {
         margin-top: 0;
         min-height: 450px;
     }
@@ -675,6 +684,24 @@ ul {
         text-align: center;
         gap: 15px;
         margin-bottom: 0;
+    }
+
+    .clients {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .bottom-text-wrapper {
+        margin-top: 0;
+    }
+
+    #bottom {
+        margin-bottom: 0;
+        min-height: 300px
+    }
+
+    .star-photo {
+        min-height: 450px;
     }
 }
 

@@ -138,8 +138,16 @@ ul {
     position: absolute;
     width: 100%;
     left: 0;
+    top: 100%;
     z-index: 1;
     background-color: #000;
+    transition: 0.8s;
+    transform-origin: right center;
+    transform: scaleX(0);
+}
+
+.burger-active {
+    transform: scaleX(1);
 }
 
 .burger-list a {
@@ -214,10 +222,30 @@ ul {
     padding: 15px;
     font-size: 16px;
     line-height: 0.8;
-    transition: 0.3s linear;
+    transition: 0.3s;
+}
+
+.modal-input {
+    margin-bottom: 20px;
+}
+
+.modal-input input {
+    max-width: 50%;
 }
 
 .modal-button:hover {
+    opacity: 0.8;
+}
+
+.modal-input-button {
+    margin-left: 10px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: 0.3s
+}
+
+.modal-input-button:hover {
     opacity: 0.8;
 }
 
@@ -731,5 +759,20 @@ ul {
 
     .modal-container {
         padding: 5px;
+    }
+
+    .modal-input {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #get-in-touch {
+        min-height: 550px;
+    }
+
+    #get-in-touch .modal-bottom {
+        margin: 0 auto 10px auto;
     }
 }

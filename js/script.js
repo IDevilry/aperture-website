@@ -4,9 +4,10 @@ const footerButton = document.querySelector("#footer-btn");
 const allModalButtons = document.querySelectorAll(".modal-button");
 const allCardsButtons = document.querySelectorAll("[data-name='card-button-m']");
 const getInTouchBtn = document.querySelector("#get-in-touch-btn");
+const modalGetInBtn = document.querySelector("#modal-get-in-btn");
 
 burger.addEventListener("click", () => {
-    document.querySelector(".burger-list").classList.toggle("none");
+    document.querySelector(".burger-list").classList.toggle("burger-active");
 });
 
 function inputClick() {
@@ -39,5 +40,14 @@ allCardsButtons.forEach((el) => {
 });
 
 getInTouchBtn.addEventListener("click", function () {
-    document.getElementById('get-in-touch').parentNode.classList.remove('none')
+    document.getElementById("get-in-touch").parentNode.classList.remove("none");
+});
+
+modalGetInBtn.addEventListener("click", function () {
+    if (document.getElementById("modal-input-email").value == "") {
+        alert("Please enter a valid email");
+        return null;
+    }
+    document.getElementById("modal-input-email").value = "";
+    alert("Thank you, expect a letter to the specified address");
 });

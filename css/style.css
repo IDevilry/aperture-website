@@ -497,12 +497,13 @@ ul {
     padding: 100px 30px 35px 30px;
     justify-content: space-between;
     border-bottom: 2px solid #fff;
+    
 }
 
 .footer-top a {
     color: #fff;
     text-decoration: none;
-    transition: 1s linear;
+    transition: 0.5s;
 }
 
 .footer-logo {
@@ -518,7 +519,7 @@ ul {
     margin-top: 10px;
 }
 
-.footer-top a :hover {
+.footer-top li :hover {
     color: #0c8ce9;
 }
 
